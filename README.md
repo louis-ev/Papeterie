@@ -1,7 +1,16 @@
 # Papeterie
 A plugin to create and edit paper documents for Kirby CMS.
 
-Turn this
+Because of the way page break is managed and repeating elements are handled, it is much easier to use a page break manually.
+By default it is === but you can change this by setting, in your config.php:
+```
+c::set('papeterie.page_break','%%%');
+```
+Also change the instructions for the "text" field in `blueprints/papeterie_document.yml`.
+
+## What Papeterie does
+
+It turns this
 
 ![image](https://cloud.githubusercontent.com/assets/1948417/22690718/6f1bf658-ed37-11e6-917b-86fa1489a4fe.png)
 
