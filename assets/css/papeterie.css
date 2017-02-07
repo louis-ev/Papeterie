@@ -89,7 +89,7 @@ h3 {
     border-bottom: 5px solid #FF3E51;
   }
   .is--overflowing::after {
-    content: 'Attention, il y a probalement du texte en excès dans votre document. Utilisez %%% pour passer à la page suivante.';
+    content: 'Attention, il y a probalement du texte en excès dans votre document. Utilisez le délimiter pour passer à la page suivante.';
     display: block;
     position: fixed;
 

@@ -36,7 +36,7 @@ fields:
   text:
     label: Contenu
     type:  markdown
-    help: Texte du papier entête.<br>Pour écrire un titre, utiliser trois dièses et un espace en début de ligne.<br>Pour passer à la page suivante, ajouter <b>%%%</b> (3 tirets) n’importe où dans le contenu.<br>Pour placer un tableau, copier le tableau de la page <em>modèle</em> ou utiliser le site suivant <span>:</span> <a href="http://www.tablesgenerator.com/markdown_tables">http://www.tablesgenerator.com/markdown_tables</a>
+    help: Texte du papier entête.<br>Pour écrire un titre, utiliser trois dièses et un espace en début de ligne.<br>Pour passer à la page suivante, ajouter <b>===</b> n’importe où dans le contenu.<br>Pour placer un tableau, copier le tableau de la page <em>modèle</em> ou utiliser le site suivant <span>:</span> <a href="http://www.tablesgenerator.com/markdown_tables">http://www.tablesgenerator.com/markdown_tables</a>
 
   headline1:
     label: Contenu de l’entête

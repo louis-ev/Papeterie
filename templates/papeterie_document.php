@@ -16,6 +16,13 @@
   <?= css('assets/css/main.css') ?>
 
   <?= css('assets/plugins/papeterie/css/papeterie.css'); ?>
+  <style>
+    @media screen {
+      .is--overflowing::after {
+        content: 'Attention, il y a probalement du texte en excès dans votre document. Utilisez <?= c::get('papeterie.page_break','===')?> pour passer à la page suivante.';
+      }
+    }
+  </style>
 
 </head>
 <body>
@@ -23,8 +30,8 @@
     <?php
       // check how many breaks there is in our page block
       $docContent = $page->text();
-      // cut text by ===, adding space next to it to prevent tables to bug big time
-      $docPerPage = explode('===', $docContent);
+      // cut text by c::get('papeterie.page_break') , adding space next to it to prevent tables to bug big time
+      $docPerPage = explode( c::get('papeterie.page_break','==='), $docContent);
       $idx = 0;
       foreach($docPerPage as $doc):
     ?>
@@ -42,9 +49,9 @@
         </div>
         <div class="papeterie-mainContent js--detectOverflows">
           <?php if($idx == 0): ?>
-          <div class="type-bigger margin-small">
-            <?php $page->intitule()->kirbytext(); ?>
-          </div>
+            <div class="type-bigger margin-small">
+              <?= $page->intitule()->kirbytext(); ?>
+            </div>
           <?php endif; ?>
           <?= kirbytext($doc); ?>
         </div>
