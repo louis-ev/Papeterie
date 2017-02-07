@@ -60,7 +60,7 @@
 <script>
 // detect overflow text
 function isOverflowing(el) {
-  return (el.offsetHeight + 5 < el.scrollHeight);
+  return (el.offsetHeight + 15 < el.scrollHeight);
 }
 
 (function() {
