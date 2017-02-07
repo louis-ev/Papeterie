@@ -24,4 +24,6 @@ to this
 
 ![image](https://cloud.githubusercontent.com/assets/1948417/22690841/e19077a4-ed37-11e6-93f5-a140f72a052a.png)
 
+and to this (for printing)
 
+![image](https://cloud.githubusercontent.com/assets/1948417/22709455/23ac9680-ed7a-11e6-8d9a-28d1086c9915.png)
