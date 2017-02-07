@@ -1,0 +1,36 @@
+title: Papeterie
+pages: true
+  template: papeterie_document
+  sort: flip
+  num: date
+options:
+  preview: true
+  status: false
+  template: false
+  url: false
+  delete: false
+fields:
+  hooksdebugger:
+    type: hooksdebugger
+  title:
+    label: Title
+    type:  text
+  logo:
+    label: Logo
+    type: image
+
+  headline0:
+    label: Informations par défaut pour tous les nouveaux documents
+    type: headline
+
+  intitule:
+    label: Intitulé
+    type:  markdown
+  entetehaut:
+    label: Haut du papier en-tête
+    type: markdown
+    help: Remplissez ici le contenu du papier entête qui sera utilisé sur les nouveaux documents
+  entetebas:
+    label: Bas du papier en-tête
+    type: markdown
+    help: Remplissez ici le contenu du papier entête qui sera utilisé sur les nouveaux documents

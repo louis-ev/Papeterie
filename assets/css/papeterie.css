@@ -1,0 +1,129 @@
+@media print
+{
+  @page {
+    size: 21.0cm × 29.7cm;
+    margin: 0;
+  }
+  body  {
+    margin: 0;
+  }
+	.page-break	{
+  	  display: block; page-break-before: always;
+  }
+}
+
+body {
+  background-color: transparent;
+}
+
+@media screen {
+  body {
+    background-color: #eee;
+    margin: 0 4%;
+  }
+}
+
+
+
+
+img {
+  max-width: 100%;
+  height:auto;
+}
+h3 {
+  font-size:.9em;
+}
+
+
+.papeterie-onepage {
+  position: relative;
+  width: 21cm;
+  height: 29.7cm;
+}
+@media screen {
+  .papeterie-onepage {
+    margin: 4% auto;
+    background-color: #fff;
+    box-shadow: 0px 2px 16px 0px rgba(0,0,0,.2);
+  }
+}
+
+.papeterie-colGauche {
+  position: absolute;
+  top:1.6cm;
+  left: 1.2cm;
+  width: 5.5cm;
+  height: 26.7cm;
+  text-align: right;
+}
+
+.papeterie-logo {
+  width: 3.84cm;
+}
+.stick-to-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.papeterie-onepage:first-child .papeterie-mainContent {
+  top: 6.73cm;
+  height: 17.7cm;
+}
+.papeterie-mainContent {
+  position: absolute;
+  top: 1.73cm;
+  left: 7.15cm;
+  width: 12.65cm;
+  height: 21.7cm;
+  font-size:  11pt;
+  line-height: 16pt;
+}
+.papeterie-mainContent :last-child {
+  margin-bottom: 0;
+}
+
+
+@media screen {
+  .is--overflowing {
+    border-bottom: 5px solid #FF3E51;
+  }
+  .is--overflowing::after {
+    content: 'Attention, il y a probalement du texte en excès dans votre document. Utilisez %%% pour passer à la page suivante.';
+    display: block;
+    position: fixed;
+
+    width: 350px;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px 15px;
+
+    background-color: #FF3E51;
+    color: white;
+  }
+}
+
+
+/************************** TYPE STYLES ************************/
+.type-small {
+  font-size: 10pt;
+  line-height: 12pt;
+}
+
+.type-smaller {
+  font-size: 7.6pt;
+  line-height: 10pt;
+}
+
+.type-bigger {
+  font-size: 14pt;
+  line-height: 20pt;
+}
+
+.type-grey {
+  color: #999;
+}
+
+.margin-small {
+  margin-bottom: 1rem;
+}
