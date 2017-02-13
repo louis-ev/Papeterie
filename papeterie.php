@@ -76,6 +76,6 @@ function debug_hook($msg) {
 
 function filterThisContent($str) {
   // replace DATE_DU_JOUR par date("j F Y");
-  $str = str_replace("DATE_DU_JOUR", strftime("%e %B %Y"), $str);
+  $str = str_replace("DATE_DU_JOUR", utf8_encode(strftime("%e %B %Y")), $str);
   return $str;
 }
