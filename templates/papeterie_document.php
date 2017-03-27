@@ -19,7 +19,7 @@
   <style>
     @media screen {
       .is--overflowing::after {
-        content: 'Attention, il y a probalement du texte en excès dans votre document. Utilisez <?= c::get('papeterie.page_break','===')?> pour passer à la page suivante.';
+        content: 'Warning, it looks like your content overflows the page. To fix this, edit the document and use <?= c::get('papeterie.page_break','===')?> to add page breaks.';
       }
     }
   </style>

@@ -20,17 +20,19 @@ fields:
     type: image
 
   headline0:
-    label: Informations par défaut pour tous les nouveaux documents
+    label: Default information for all new documents
     type: headline
+    help: These parts of document will be copied to each new document you create. You can then change them if you want.
 
   intitule:
-    label: Intitulé
+    label: Content heading
     type:  markdown
+    help: Your document will start with this heading.
   entetehaut:
-    label: Haut du papier en-tête
+    label: Page header
     type: markdown
-    help: Remplissez ici le contenu du papier entête qui sera utilisé sur les nouveaux documents
+    help: This is a header that will appear on the top of every document's page.
   entetebas:
-    label: Bas du papier en-tête
+    label: Page footer
     type: markdown
-    help: Remplissez ici le contenu du papier entête qui sera utilisé sur les nouveaux documents
+    help: This is a footer that will appear on the bottom of every document's page.

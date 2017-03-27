@@ -11,40 +11,40 @@ fields:
     label: Title
     type:  text
   date:
-    label:  Date d’édition
+    label:  Data
     type:   date
     default: today
     width:  2/4
     format: DD/MM/YYYY
-    help: Utilisée uniquement côté panel pour organiser les documents
+    help: Only for internal use, so the documents are sorted chronologically.
 
   shareable:
-    label:  Permettre l’accès extérieur
+    label:  External access
     type:   checkbox
     width: 2/4
-    help: Si cette case est décochée, seul les personnes connectées au panel pourront accéder à ce courrier. Si cette case est cochée, les personnes qui ont l’URL pourront aussi y accéder.
+    help: If you check this, everyone with a link address to the document will be able to view it. If you leave this unchecked, only logged users will be able to view this document.
 
 
   headline0:
-    label: Contenu du document
+    label: Content of the document
     type: headline
 
   intitule:
-    label: Intitulé
+    label: Headline
     type:  markdown
-
+    help:  Your document will start with this headline.
   text:
-    label: Contenu
+    label: Content
     type:  markdown
-    help: Texte du papier entête.<br>Pour écrire un titre, utiliser trois dièses et un espace en début de ligne.<br>Pour passer à la page suivante, ajouter <b>===</b> n’importe où dans le contenu.<br>Pour placer un tableau, copier le tableau de la page <em>modèle</em> ou utiliser le site suivant <span>:</span> <a href="http://www.tablesgenerator.com/markdown_tables">http://www.tablesgenerator.com/markdown_tables</a>
+    help:  To add a page-break, use three equals-signs, like this ===<br>To insert a table, use this generator <a href="http://www.tablesgenerator.com/markdown_tables">tablesgenerator.com/markdown_tables</a>.
 
   headline1:
-    label: Contenu de l’entête
+    label: Header and footer
     type: headline
 
   entetehaut:
-    label: Haut du papier en-tête
+    label: Header
     type: markdown
   entetebas:
-    label: Bas du papier en-tête
+    label: Footer
     type: markdown
