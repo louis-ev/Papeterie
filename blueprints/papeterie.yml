@@ -12,27 +12,55 @@ options:
 fields:
   hooksdebugger:
     type: hooksdebugger
+
   title:
-    label: Title
+    label:
+      en: Title
+      pl: Tytuł
     type:  text
+
   logo:
     label: Logo
     type: image
 
   headline0:
-    label: Default information for all new documents
+    label:
+      en: Default information for all new documents
+      pl: Domyślna treść dla wszystkich nowych dokumentów
+      fr: Informations par défaut pour tous les nouveaux documents
     type: headline
-    help: These parts of document will be copied to each new document you create. You can then change them if you want.
+    help:
+      en: These parts of document will be copied to each new document you create. You can then change them if you want.
+      pl: Te elementy zostaną automatycznie skopiowane do nowo tworzonych dokumentów. Można je tam również edytować.
 
   intitule:
-    label: Content heading
+    label:
+      en: Content heading
+      pl: Nagłówek treści
+      fr: Intitulé
     type:  markdown
-    help: Your document will start with this heading.
+    help:
+      en: Your document will start with this heading.
+      pl: Dokument rozpocznie się od tego nagłówka.
+
   entetehaut:
-    label: Page header
+    label:
+      en: Page header
+      pl: Nagłówek strony
+      fr: Haut du papier en-tête
     type: markdown
-    help: This is a header that will appear on the top of every document's page.
+    help:
+      en: This is a header that will appear on the top of every document's page.
+      pl: To jest nagłówek strony i pojawi się na górze każdej strony dokumentu.
+      fr: Remplissez ici le contenu du papier entête qui sera utilisé sur les nouveaux documents
+      
   entetebas:
-    label: Page footer
+    label:
+      en: Page footer
+      pl: Stopka strony
+      fr: Bas du papier en-tête
     type: markdown
-    help: This is a footer that will appear on the bottom of every document's page.
+    help:
+      en: This is a footer that will appear on the bottom of every document's page.
+      pl: Ta stopka pojawi się na dole każdej strony dokumentu.
+      fr: Remplissez ici le contenu du papier entête qui sera utilisé sur les nouveaux documents
