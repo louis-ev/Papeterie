@@ -10,8 +10,6 @@ options:
   url: false
   delete: false
 fields:
-  hooksdebugger:
-    type: hooksdebugger
 
   title:
     label:
@@ -38,7 +36,7 @@ fields:
       en: Content heading
       pl: Nagłówek treści
       fr: Intitulé
-    type:  markdown
+    type:  textarea
     help:
       en: Your document will start with this heading.
       pl: Dokument rozpocznie się od tego nagłówka.
@@ -48,7 +46,7 @@ fields:
       en: Page header
       pl: Nagłówek strony
       fr: Haut du papier en-tête
-    type: markdown
+    type: textarea
     help:
       en: This is a header that will appear on the top of every document's page.
       pl: To jest nagłówek strony i pojawi się na górze każdej strony dokumentu.
@@ -59,7 +57,7 @@ fields:
       en: Page footer
       pl: Stopka strony
       fr: Bas du papier en-tête
-    type: markdown
+    type: textarea
     help:
       en: This is a footer that will appear on the bottom of every document's page.
       pl: Ta stopka pojawi się na dole każdej strony dokumentu.
