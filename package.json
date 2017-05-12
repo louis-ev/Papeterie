@@ -1,0 +1,12 @@
+{
+  "name": "papeterie",
+  "description": "Create and edit printed documents for Kirby CMS",
+  "author": "Louis Eveillard",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/louis-ev/Papeterie"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "type": "kirby-plugin"
+}
