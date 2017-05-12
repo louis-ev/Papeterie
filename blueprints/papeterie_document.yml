@@ -1,4 +1,7 @@
-title: Document
+title:
+  en: Document
+  pl: Dokument
+  fr: Document
 pages: false
 files: true
 options:
@@ -7,44 +10,85 @@ options:
   template: false
   url: true
 fields:
+
   title:
-    label: Title
+    label:
+      en: Title
+      pl: Tytuł
+      fr: Title
     type:  text
+    
   date:
-    label:  Date d’édition
-    type:   date
+    label:
+      en: Date of last edit
+      pl: Data edycji
+      fr: Date d’édition
+    type: date
     default: today
-    width:  2/4
+    width: 2/4
     format: DD/MM/YYYY
-    help: Utilisée uniquement côté panel pour organiser les documents
+    help:
+      en: Only for internal use, so the documents are sorted chronologically.
+      pl: Tylko na użytek wewnętrzny w celu sortowania chronologicznego dokumentów.
+      fr: Utilisée uniquement côté panel pour organiser les documents
 
   shareable:
-    label:  Permettre l’accès extérieur
-    type:   checkbox
+    label:
+      en: External access
+      pl: Publiczny dostęp
+      fr: Permettre l’accès extérieur
+    type: checkbox
     width: 2/4
-    help: Si cette case est décochée, seul les personnes connectées au panel pourront accéder à ce courrier. Si cette case est cochée, les personnes qui ont l’URL pourront aussi y accéder.
-
+    help:
+      en: If you check this, everyone with a link address to the document will be able to view it. If you leave this unchecked, only logged users will be able to view this document.
+      pl: Jeśli zaznaczysz to pole, każda osoba posiadająca link do dokumentu będzie mogła go zobaczyć. Pozostaw to pole odznaczone, aby dokument był widoczny tylko dla zalogowanych użytkowników.
+      fr: Si cette case est décochée, seul les personnes connectées au panel pourront accéder à ce courrier. Si cette case est cochée, les personnes qui ont l’URL pourront aussi y accéder.
 
   headline0:
-    label: Contenu du document
+    label:
+      en: Content of the document
+      pl: Treść dokumentu
+      fr: Contenu du document
     type: headline
 
   intitule:
-    label: Intitulé
-    type:  markdown
+    label:
+      en: Headline
+      pl: Nagłówek
+      fr: Intitulé
+    type: markdown
+    help:
+      en: Your document will start with this headline.
+      pl: Twój dokument rozpocznie się od tego nagłówka.
 
   text:
-    label: Contenu
-    type:  markdown
-    help: Texte du papier entête.<br>Pour écrire un titre, utiliser trois dièses et un espace en début de ligne.<br>Pour passer à la page suivante, ajouter <b>===</b> n’importe où dans le contenu.<br>Pour placer un tableau, copier le tableau de la page <em>modèle</em> ou utiliser le site suivant <span>:</span> <a href="http://www.tablesgenerator.com/markdown_tables">http://www.tablesgenerator.com/markdown_tables</a>
+    label:
+      en: Content
+      pl: Treść
+      fr: Contenu
+    type: markdown
+    help:
+      en: To add a page-break, use three equals-signs, like this ===<br>To insert a table, use this generator <a href="http://www.tablesgenerator.com/markdown_tables">tablesgenerator.com/markdown_tables</a>.
+      pl: Aby dodać przełamanie strony, użyj trzech znaków równości ===<br>Aby dodać tabelkę, użyj generatora pod adresem <a href="http://www.tablesgenerator.com/markdown_tables">tablesgenerator.com/markdown_tables</a>.
+      fr: Texte du papier entête.<br>Pour écrire un titre, utiliser trois dièses et un espace en début de ligne.<br>Pour passer à la page suivante, ajouter <b>===</b> n’importe où dans le contenu.<br>Pour placer un tableau, copier le tableau de la page <em>modèle</em> ou utiliser le site suivant <span>:</span> <a href="http://www.tablesgenerator.com/markdown_tables">http://www.tablesgenerator.com/markdown_tables</a>
 
   headline1:
-    label: Contenu de l’entête
+    label:
+      en: Header and footer
+      pl: Nagłówek i stopka
+      fr: Contenu de l’entête
     type: headline
 
   entetehaut:
-    label: Haut du papier en-tête
+    label:
+      en: Header
+      pl: Nagłówek
+      fr: Haut du papier en-tête
     type: markdown
+
   entetebas:
-    label: Bas du papier en-tête
+    label:
+      en: Footer
+      pl: Stopka
+      fr: Bas du papier en-tête
     type: markdown

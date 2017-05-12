@@ -1,4 +1,14 @@
 <?php if(!$page->shareable()->bool() && !$site->user()) go('home'); ?>
+<?php
+  // Remember to use $delimiter
+  $delimiter = c::get('papeterie.page_break','===');
+  // Define an array with warning messages in different languages
+  $overflow = array(
+    'en' => 'Warning, it looks like your content overflows the page. To fix this, edit the document and use ' . $delimiter . ' to add page breaks.',
+    'pl' => 'Wygląda na to, że treść dokumentu w którymś miejscu wykracza poza stronę. Edytuj ten dokument i użyj '.$delimiter.', aby dodać przełamania strony.',
+    'fr' => 'Attention, il y a probalement du texte en excès dans votre document. Utilisez '.$delimiter.' pour passer à la page suivante.',
+  );
+?>
 <!DOCTYPE html>
 <html lang="<?php echo $site->language() ?>" class="no-js">
 <head>
@@ -19,7 +29,7 @@
   <style>
     @media screen {
       .is--overflowing::after {
-        content: 'Attention, il y a probalement du texte en excès dans votre document. Utilisez <?= c::get('papeterie.page_break','===')?> pour passer à la page suivante.';
+        content: '<?php echo(array_key_exists($site->language(), $overflow) ? $overflow[$site->language()] : $overflow['en'] ?>';
       }
     }
   </style>
