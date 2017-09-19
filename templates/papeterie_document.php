@@ -29,7 +29,7 @@
   <style>
     @media screen {
       .is--overflowing::after {
-        content: '<?php echo(array_key_exists($site->language(), $overflow) ? $overflow[$site->language()] : $overflow['en'] ?>';
+        content: '<?php echo(array_key_exists($site->language(), $overflow) ? $overflow[$site->language()] : $overflow['en']) ?>';
       }
     }
   </style>
